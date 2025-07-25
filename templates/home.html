@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Telethon Test</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; background-color: #222; color: #eee; }
+        h1 { color: #00b0ff; }
+        a { color: #66ccff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .status { padding: 1em; border: 1px solid #444; background-color: #333; margin-top: 1em; }
+    </style>
+</head>
+<body>
+    <h1>Django App Home</h1>
+    <div class="status">
+        <h2>Telethon Connection Status:</h2>
+        <p>{{ telethon_status }}</p>
+    </div>
+    <p><a href="/test-telethon/">Click here to test Telethon connection</a></p>
+    <p>If you don't see status above, make sure you've added TELEGRAM_API_ID and TELEGRAM_API_HASH in Railway variables for your Django server.</p>
+</body>
+</html>
